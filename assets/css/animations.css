@@ -1,0 +1,18 @@
+:root {
+    --green: #14a160;
+    --green-bg: #28c9b0;
+    --white: #fafafa;
+    --yellow: #ffcf00;
+    --black: #000;
+}
+
+
+
+@keyframes changeBgOrangeRed {
+    0% {
+        background: transparent;
+    }
+    100% {
+        background: var(--green);
+    }
+}
