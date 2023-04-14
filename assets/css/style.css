@@ -7,7 +7,6 @@
     --background: #e7e7e7;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +20,8 @@ body {
     background: var(--background);
 }
 
+/* HEADER */
+
 .navbar-sponsors,
 .sponsors-imgs,
 .navbar,
@@ -31,6 +32,7 @@ body {
 #header {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .navbar-sponsors {
@@ -98,9 +100,10 @@ body {
     align-items: center;
     padding: 0 50px;
     justify-content: space-between;
-    position: sticky;
-    top: -1px;
+    position: fixed;
+    z-index: 50;
     transition: background-color 0.3s ease-in-out;
+    width: 100%;
 }
 
 .navbar-logo {
@@ -126,7 +129,7 @@ body {
     color: var(--white);
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 200px 0;
     font-weight: 500;
     width: 100%;
     gap: 20px;
@@ -186,38 +189,43 @@ main {
     width: 100%;
 }
 
-#matches {
+.matches-slides {
+    margin: 0 auto;
+    width: 90%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
-    padding: 80px 0;
+    gap: 30px;
 }
 
-#matches h2 {
-    font-weight: 800;
-    font-size: 30px;
-}
-
-.matches-slide{
+.section-title {
     display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    padding: 0 20px;
-}
-
-.matches-slide i {
-    font-size: 25px;
-}
-
-.matches-contain{
-    display: flex;
-    align-items: center;
+    gap: 10px;
     justify-content: center;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.section-title i {
+    font-size: 25px;
+    color: var(--green);
+}
+
+.splide__slide li{
     width: 100%;
-    gap: 60px;
+    height: auto;
+}
+
+.splide__arrow {
+    background-color: var(--green) !important;
+}
+
+.splide__arrow svg{
+    fill: var(--white) !important;
 }
 
 .match-contain {
@@ -257,36 +265,122 @@ main {
     text-align: center;
 }
 
-
 .destacado {
     background-color: var(--yellow);
 }
 
-.container {
-    margin: 0 auto;
-    width: 90%;
-    padding: 50px;
+/* NOTICIAS */
+
+#news-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    padding: 40px 0;
 }
 
-.container h2 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 30px;
-}
-
-
-.splide__slide li{
+.news {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     width: 100%;
-    height: auto;
 }
 
-.splide__arrow {
-    background-color: var(--green) !important;
+.news-title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 80%;
 }
 
-.splide__arrow svg{
-    fill: var(--white) !important;
+.news-1 {
+    position: relative;
+    width: 40%;
+    border-radius: 30px;
+    height: 400px;
+    font-size: 20px;
+    color: var(--background);
+}
+
+.news-1::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 30px;
+    left: 0;
+}
+
+.news-1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.banner-zazo {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-zazo img {
+    width: 70%;
+}
+
+/* TABLAS */
+
+.tables-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+}
+
+.tables-preview {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.tables-tournament {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.tables-tournament td, .tables-tournament th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tables-tournament tr:nth-child(even){background-color: #f2f2f2;}
+
+.tables-tournament tr:hover {background-color: #ddd;}
+
+.tables-tournament th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--yellow);
+    color: white;
+}
+
+.tables-tournament img{
+    height: 30px;
 }

@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/img/logos/logo-cr-white.png" type="image/x-icon">
-    <!-- Splide JS -->
+    <!-- SLIDE SPLIDE JS -->
     <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">   
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <title>Copa Relampago</title>
 </head>
 <body>
@@ -31,7 +30,7 @@
                 <img class="navbar-logo" src="./assets/img/logos/logo-cr-white.png" alt="Logo de Copa Relampago" />
                 <input type="checkbox" id="menu-toggle" /> 
                 <label for="menu-toggle" class="menu-label">
-                    <img src="./assets/img/menu.png" alt="" srcset="">
+                    <i class="fa-solid fa-bars"></i>
                 </label>
                 <ul class="navbar-list">
                     <li><a href="" class="active">INICIO</a></li>
@@ -61,7 +60,7 @@
                             <span>VS</span>
                         </div>
                         <div class="team-away">
-                            <img src="./assets/img/tusa.png" alt="">
+                            <img src="./assets/img/la-peste.png" alt="">
                             <span>TUSA FC</span>
                         </div>
                     </div>
@@ -69,12 +68,88 @@
             </section>
         </div>
     </header>
+
     <main>
-        <section class="container">
-            <h2>PROXIMOS PARTIDOS</h2>
+        <!-- SLIDE PROXIMOS PARTIDOS -->
+        <section class="matches-slides">
+            
+            <div class="section-title"><i class="fa-solid fa-hand-point-right"></i><h2> PRÓXIMOS PARTIDOS</h2></div>    
+            
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class="splide__slide">
                             <div class="match-contain match-3">
                                 <div class="match-info">
@@ -151,27 +226,148 @@
                 </div>
             </div>
         </section>
-        
-    </main>
-    <!-- Splide JS -->
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-    <script src="./assets/js/main.js"></script>
-    <script>
-    var splide = new Splide( '.splide', {
-        perPage: 3,
-        omitEnd: true,
-        gap: "50px",
-        pagination: false,
-        breakpoints: {
-            768: {
-                perPage: 1,
-            }
-        }
-} );
+        <!-- NOTICIA -->
+        <section id="news-container">
+            <div class="section-title"><i class="fa-solid fa-pencil"></i><h2> PERIODISMO SERIO</h2></div> 
+            <div class="news">
+                <div class="news-1">
+                <img src="./assets/img/img-home.jpg" alt="" srcset="">
+                <h3 class="news-title">RESUMEN SEMIS - SERIE A | FECHA 01
+                </h3>
+            </div>
+            <div class="news-1">
+                <img src="./assets/img/img-home.jpg" alt="" srcset="">
+                <h3 class="news-title">RESUMEN SEMIS - SERIE A | FECHA 01
+                </h3>
+            </div>
+            <div class="news-1">
+                <img src="./assets/img/img-home.jpg" alt="" srcset="">
+                <h3 class="news-title">RESUMEN SEMIS - SERIE A | FECHA 01
+                </h3>
+            </div>
+            <div class="news-1">
+                <img src="./assets/img/img-home.jpg" alt="" srcset="">
+                <h3 class="news-title">RESUMEN SEMIS - SERIE A | FECHA 01
+                </h3>
+            </div>
+            
 
-splide.mount();
-    </script>
+            </div>
+            
+        </section>
+
+        <section class="banner-zazo">
+            <img src="./assets/img/bannerzazo2.png" alt="" srcset="">
+        </section>
+
+        <section class="tables-general">
+            <div class="title-tournament">
+                <select name="" id="">
+                    <option value="SERIE A">SERIE A</option>
+                    <option value="SERIE B">SERIE B</option>
+                    <option value="SERIE C">SERIE C</option>
+                    <option value="SUB 23">SUB 23</option>
+                    <option value="SUB 20">SUB 20</option>
+                    <option value="SUB 18">SUB 18</option>
+                </select>
+                <h3>SERIE A</h3>
+            </div>
+            <div class="tables-preview">
+                <div class="tables-tournament position">
+                    <div class="tables-title">
+                        <span></span>
+                        <h3>POSICIONES</h3>
+                    </div>
+                    <table class="tables-tournament">
+                        <tr>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>Pts.</th>
+                            <th>PJ</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset=""> La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tables-tournament goals">
+                    <div class="tables-title">
+                        <span></span>
+                        <h3>GOLEADORES</h3>
+                    </div>
+                    <table class="tables-tournament">
+                        <tr>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>Pts.</th>
+                            <th>PJ</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset=""> La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="./assets/img/la-peste.png" alt="" srcset="">La Peste</td>
+                            <td>10</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script src="./assets/js/main.js"></script>
+
 </body>
 </html>

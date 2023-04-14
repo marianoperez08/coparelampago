@@ -7,12 +7,7 @@
 }
 
 
-
-@keyframes changeBgOrangeRed {
-    0% {
-        background: transparent;
-    }
-    100% {
-        background: var(--green);
-    }
+.navbar-list li a:hover{
+    transition: all 200ms ease-in;
+    color: var(--yellow);
 }
