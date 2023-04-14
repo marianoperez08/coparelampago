@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/img/logos/logo-cr-white.png" type="image/x-icon">
+    <!-- Splide JS -->
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">   
     <title>Copa Relampago</title>
 </head>
 <body>
@@ -19,9 +23,7 @@
         <nav class="navbar-sponsors">
             <div class="sponsors-imgs">
                 <img src="./assets/img/sponsors/COPA VECTOR.png" alt="" srcset="">
-                <img src="./assets/img/sponsors/COPA VECTOR.png" alt="" srcset="">
-                <img src="./assets/img/sponsors/COPA VECTOR.png" alt="" srcset="">
-                <img src="./assets/img/sponsors/COPA VECTOR.png" alt="" srcset="">
+                <img src="./assets/img/sponsors/logo-zazo-azul.png" alt="" srcset="">
             </div>
         </nav>
         <div class="home">
@@ -59,7 +61,7 @@
                             <span>VS</span>
                         </div>
                         <div class="team-away">
-                            <img src="./assets/img/la-peste.png" alt="">
+                            <img src="./assets/img/tusa.png" alt="">
                             <span>TUSA FC</span>
                         </div>
                     </div>
@@ -68,65 +70,108 @@
         </div>
     </header>
     <main>
-        <section id="matches">
-            <h2>PRÓXIMOS PARTIDOS</h2>
-            <div class="matches-slide">
-                <i class="fa-solid fa-chevron-left"></i>
-                <div class="matches-contain">
-                    <div class="match-contain match-1">
-                        <div class="match-info">
-                            <span class="court">CANCHA 1</span>
-                            <span class="day-hour">19/07 - 18:00hs.</span>
-                            <span>Fecha 1 - SERIE A</span>
-                        </div>
-                        <div class="match-info-teams">
-                            <div class="match-team-home">
-                                <img src="./assets/img/la-peste.png" alt="">
-                                <span>LA PESTE</span>
+        <section class="container">
+            <h2>PROXIMOS PARTIDOS</h2>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="match-team-away">
-                                <img src="./assets/img/la-peste.png" alt="">
-                                <span>TUSA FC</span>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="match-contain match-2">
-                        <div class="match-info">
-                            <span class="court">CANCHA 1</span>
-                            <span class="day-hour">19/07 - 18:00hs.</span>
-                        </div>
-                        <div class="match-info-teams">
-                            <div class="match-team-home">
-                                <img src="./assets/img/la-peste.png" alt="">
-                                <span>LA PESTE</span>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="match-team-away">
-                                <img src="./assets/img/la-peste.png" alt="">             
-                                <span>TUSA FC</span>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="match-contain match-3">
+                                <div class="match-info">
+                                    <span class="court">CANCHA 1</span>
+                                    <span class="day-hour">19/07 - 18:00hs.</span>
+                                </div>
+                                <div class="match-info-teams">
+                                    <div class="match-team-home">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>LA PESTE</span>
+                                    </div>
+                                    <div class="match-team-away">
+                                        <img src="./assets/img/la-peste.png" alt="">
+                                        <span>TUSA FC</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="match-contain match-3">
-                        <div class="match-info">
-                            <span class="court">CANCHA 1</span>
-                            <span class="day-hour">19/07 - 18:00hs.</span>
-                        </div>
-                        <div class="match-info-teams">
-                            <div class="match-team-home">
-                                <img src="./assets/img/la-peste.png" alt="">
-                                <span>LA PESTE</span>
-                            </div>
-                            <div class="match-team-away">
-                                <img src="./assets/img/la-peste.png" alt="">
-                                <span>TUSA FC</span>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-                <i class="fa-solid fa-chevron-right"></i>
             </div>
         </section>
+        
     </main>
+    <!-- Splide JS -->
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        omitEnd: true,
+        gap: "50px",
+        pagination: false,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            }
+        }
+} );
+
+splide.mount();
+    </script>
 </body>
 </html>

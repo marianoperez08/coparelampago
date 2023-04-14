@@ -74,22 +74,10 @@
     }
 
     /* PARTIDO DESTACADO */
-
-
-    .matches-slide {
+    .container {
         width: 100%;
-        gap: 20px;
-    }
-
-    .matches-contain {
+        display: flex;
         flex-direction: column;
-    }
-
-    .match-contain {
-        padding: 20px 60px;
-    }
-
-    .match-1, .match-3 {
-        display: none;
+        gap: 30px;
     }
 }
